@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/registrarAcesso.css">
+</head>
+
+<body>
+    <div id="register-container">
+        <h1>Cadastre-se para acessar o sistema</h1></br>
+        <form id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="e-mail" id="email" placeholder="Digite seu e-mail" data-min-length="3">
+            </div>
+            <div class="half-box spacing">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu nome" data-max-length="16">
+            </div>
+            <div class="half-box">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite o seu sobre nome">
+            </div>
+            <div class="half-box spacing">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </div>
+            <div class="half-box">
+                <label for="passconfirmation">Senha</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua senha">
+            </div>
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os&nbsp;<a href="#">termos de uso</a></label>
+            </div>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Registrar">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="../js/scripts.js"></script>    
+</body>
+</html>
